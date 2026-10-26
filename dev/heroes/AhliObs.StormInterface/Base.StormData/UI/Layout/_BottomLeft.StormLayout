@@ -5206,6 +5206,17 @@
 			<Alpha val="128"/>
 		</Frame> -->
 	</Frame>
+	<!-- Cassia Surge of Light charges overlay on the trait button (added in 2.55.7), sized to the shrunk command buttons -->
+	<Frame type="SelectionUnitStatusPanel" name="AmazonSurgeOfLightChargeButtonOverrideFrame" file="Amazon">
+		<Height val="56"/>
+		<Width val="56"/>
+		<Frame type="UnitStatusFrame" name="UnitStatusFrame0">
+			<Frame type="UnitStatusAbilCharge" name="AmazonSurgeOfLightChargeFrame">
+				<Width val="#commandButtonWidth"/>
+				<Height val="#commandButtonHeight"/>
+			</Frame>
+		</Frame>
+	</Frame>
 	<!-- DVa hero UI -->
 	<Frame type="SelectionUnitStatusPanel" name="DVaMechCommandCardFrame" file="DVa">
 		<Height val="56"/>
