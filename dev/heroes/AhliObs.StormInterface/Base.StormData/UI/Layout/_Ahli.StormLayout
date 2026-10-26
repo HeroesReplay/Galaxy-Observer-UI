@@ -509,9 +509,10 @@
 				<Frame type="HeroSpecificContainerPanel" name="HeroSpecificBackgroundStatusContainer">
 					<Visible val="false"/>
 				</Frame>
-				<!-- Hide hero-specific things... li-ming's command card icons, I assume -->
+				<!-- Li-Ming's Tal Rasha's Elements pips (only hero using this location): move it onto the command panel -->
 				<Frame type="HeroSpecificContainerPanel" name="HeroSpecificCommandCardStatusContainer">
-					<Visible val="false"/>
+					<Anchor side="Bottom" relative="$ConsoleUIContainer/CommandPanel" pos="Max" offset="0"/>
+					<Anchor side="Left" relative="$ConsoleUIContainer/CommandPanel" pos="Min" offset="0"/>
 				</Frame>
 				
 				<Frame type="Frame" name="KillLogPanel">
