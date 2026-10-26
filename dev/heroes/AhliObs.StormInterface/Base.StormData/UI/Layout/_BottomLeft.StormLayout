@@ -5539,17 +5539,17 @@
 			</Frame>
 		</Frame>
 	</Frame>
-	<!-- Li Ming command card hero UI -->
+	<!-- Li Ming command card hero UI: the container sits on the CommandPanel (826x108), so this frame's top is 32 above the panel; Q/W/E/R buttons start at x 74 with a 47 step. Pips sit low enough that the portrait panel does not cover their tips -->
 	<Frame type="SelectionUnitStatusPanel" name="LiMingFrame" file="LiMing">
-		<Anchor side="Bottom" relative="$parent" pos="Max" offset="-60"/>
-		<Anchor side="Left" relative="$parent" pos="Min" offset="44"/>
+		<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+		<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
 		<Height val="140"/>
 		<Width val="500"/>
 	
 		<Frame type="UnitStatusFrame" name="UnitStatusFrame0">
 			<Frame type="Image" name="MagicMissilesBonusImage">
-				<Anchor side="Top" relative="$parent" pos="Min" offset="74"/>
-				<Anchor side="Left" relative="$parent" pos="Min" offset="-18"/>
+				<Anchor side="Top" relative="$parent" pos="Min" offset="28"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="77"/>
 				<Width val="46"/>
 				<Height val="28"/>
 				<!-- 92x56
@@ -5562,7 +5562,7 @@
 				<Texture val="@UI/Storm_UI_HUD_Wizard_AbilityBonus"/> -->
 			</Frame>
 			<Frame type="Image" name="ArcaneOrbBonusImage">
-				<Anchor side="Top" relative="$parent" pos="Min" offset="74"/>
+				<Anchor side="Top" relative="$parent" pos="Min" offset="28"/>
 				<Anchor side="Left" relative="$parent/MagicMissilesBonusImage" pos="Max" offset="1"/>
 				<Width val="46"/>
 				<Height val="28"/>
@@ -5576,8 +5576,10 @@
 				<Texture val="@UI/Storm_UI_HUD_Wizard_AbilityBonus"/> -->
 			</Frame>
 			<Frame type="Image" name="TeleportBonusImage">
-				<Anchor side="Top" relative="$parent" pos="Min" offset="74"/>
+				<Anchor side="Top" relative="$parent" pos="Min" offset="28"/>
 				<Anchor side="Left" relative="$parent/ArcaneOrbBonusImage" pos="Max" offset="1"/>
+				<Width val="46"/>
+				<Height val="28"/>
 				<!-- 92x56
 				<Texture val="@UI/Storm_UI_HUD_Wizard_AbilityBonus"/> -->
 			</Frame>
@@ -5588,7 +5590,7 @@
 				<Texture val="@UI/Storm_UI_HUD_Wizard_AbilityBonus"/> -->
 			</Frame>
 			<Frame type="Image" name="HeroicBonusImage">
-				<Anchor side="Top" relative="$parent" pos="Min" offset="74"/>
+				<Anchor side="Top" relative="$parent" pos="Min" offset="28"/>
 				<Anchor side="Left" relative="$parent/TeleportBonusImage" pos="Max" offset="1"/>
 				<Width val="46"/>
 				<Height val="28"/>
